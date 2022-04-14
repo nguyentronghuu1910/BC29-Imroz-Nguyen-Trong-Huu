@@ -1,11 +1,20 @@
+
 <!doctype html>
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>imroz</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- libs -->
+  <!-- Slick css -->
+  <link rel="stylesheet" href="./libs/slick/slick.css">
+  <link rel="stylesheet" href="./libs/slick/slick-theme.css">
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- googlefont -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,26 +26,23 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+
   <!-- Animate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- của tui -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+  <!-- header -->
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark">
       <!-- Brand -->
       <a class="navbar-brand" href="#">
-        <img src="./images/logo.png" alt="">
+        <img class="img-fluid img-logo" src="./img/logo.png" alt="">
       </a>
 
       <!-- Toggler/collapsibe Button -->
@@ -47,7 +53,7 @@
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
@@ -60,137 +66,184 @@
             <a class="nav-link" href="#">Pages</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blocks</a>
+            <a class="nav-link" href="#">Blogs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <div class="header__link">
-          <a href="https://themeforest.net/checkout/85225035/create_account">buy now</a>
-        </div>
+        <!-- buy now btn-->
+        <button class="btn seemorebtn">
+          <a class="btn_bg buynow" href="#">
+            <span> BUY NOW</span>
+          </a>
+        </button>
       </div>
     </nav>
   </header>
-
-  <!-- carousel -->
-
-  <div id="demo">
-
-    <!-- Indicators -->
-    <ul class="carousel-indicators" class="carousel slide" data-ride="carousel">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-      <li data-target="#demo" data-slide-to="3"></li>
-    </ul>
-
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="carousel-caption">
-          <h3>UX Research.</h3>
-          <p>There are many variations of passages of Lorem'Ipsum available but <br />
-            the majority have suffered alteration.</p>
-          <a href="#">contact us</a>
+  <!-- Carousel -->
+  <section id="carousel">
+    <div class="carousel__bg">
+      <div class="carousel__slick">
+        <!-- slide1 -->
+        <div class="carousel__wrap">
+          <div class="carousel__img">
+            <img class="img-fluid" src="./img/bg-image-22.jpg" alt="carousel-img">
+          </div>
+          <div class="carousel__title txt__center container">
+            <h1 class="mgb-20 wow animate__fadeInUp animated">UX Research.</h1>
+            <p class="p__text  wow animate__fadeInUp animated">There are many variations of passages of Lorem Ipsum
+              available but
+              <br> the majority have suffered
+              alteration.
+            </p>
+            <div class="seemorebtn txt__center mgt-40">
+              <button class="btn ">
+                <a class="btn_bg animate__fadeInUp animated" href="#">
+                  <span> CONTACT US</span>
+                </a>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="carousel-caption">
-          <h3>Marketing</h3>
-          <p>There are many variations of passages of Lorem'Ipsum available but <br />
-            the majority have suffered alteration.</p>
-          <a href="#">contact us</a>
+        <!-- slide2 -->
+        <div class="carousel__wrap">
+          <div class="carousel__img">
+            <img class="img-fluid" src="./img/bg-image-23.jpg" alt="carousel-img">
+          </div>
+          <div class="carousel__title txt__center container">
+            <h1 class="mgb-20 wow animate__fadeInUp animated">Marketing</h1>
+            <p class="p__text wow animate__fadeInUp animated">There are many variations of passages of Lorem Ipsum
+              available but
+              <br> the majority have suffered
+              alteration.
+            </p>
+            <div class="seemorebtn txt__center mgt-40">
+              <button class="btn animate__fadeInUp animated">
+                <a class="btn_bg " href="#">
+                  <span> CONTACT US</span>
+                </a>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="carousel-caption">
-          <h3>Development</h3>
-          <p>There are many variations of passages of Lorem'Ipsum available but <br />
-            the majority have suffered alteration.</p>
-          <a href="#">contact us</a>
+        <!-- slide3 -->
+        <div class="carousel__wrap">
+          <div class="carousel__img">
+            <img class="img-fluid" src="./img/bg-image-24.jpg" alt="carousel-img">
+          </div>
+          <div class="carousel__title txt__center container">
+            <h1 class="mgb-20 wow animate__fadeInUp animated">Devolopment</h1>
+            <p class="p__text wow animate__fadeInUp animated">There are many variations of passages of Lorem Ipsum
+              available but
+              <br> the majority have suffered
+              alteration.
+            </p>
+            <div class="seemorebtn txt__center mgt-40">
+              <button class="btn animate__fadeInUp animated ">
+                <a class="btn_bg " href="#">
+                  <span> CONTACT US</span>
+                </a>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="carousel-caption">
-          <h3>DUX Research.</h3>
-          <p>There are many variations of passages of Lorem'Ipsum available but <br />
-            the majority have suffered alteration.</p>
-          <a href="#">contact us</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a> -->
-
-  </div>
-
-  <!-- Service -->
-
-  <section id="service" class="container">
-    <div class="service__content">
-      <div class="service__title">
-        <span class="subtitle">What we can do for you</span>
-        <h2>Our Awesome Service</h2>
-        <p>There are many variations of passages of Lorem Ipsum available, <br />
-          but the majority have suffered alteration.</p>
-      </div>
-      <div class="service__blog">
-        <div class="service__item">
-          <i class="fas fa-podcast fa-5x" style="color: #fd4766;"></i>
-          <h3>Business Stratagy</h3>
-          <p>I throw myself down among the tall grass by the stream as I lie close to the earth.
-          </p>
-        </div>
-        <div class="service__item">
-          <i class="fas fa-layer-group fa-4x" style="color: #357FF6"></i>
-          <h3>Business Stratagy</h3>
-          <p>I throw myself down among the tall grass by the stream as I lie close to the earth.
-          </p>
-        </div>
-        <div class="service__item">
-          <i class="fas fa-users fa-4x" style="color: #12d8df;"></i>
-          <h3>Business Stratagy</h3>
-          <p>I throw myself down among the tall grass by the stream as I lie close to the earth.
-          </p>
-        </div>
-        <div class="service__item">
-          <i class="fas fa-tv fa-4x" style="color:#59C98D ;"></i>
-          <h3>Business Stratagy</h3>
-          <p>I throw myself down among the tall grass by the stream as I lie close to the earth.
-          </p>
-        </div>
-        <div class="service__item">
-          <i class="fas fa-users fa-4x" style="color: #6F41F6;"></i>
-          <h3>Business Stratagy</h3>
-          <p>I throw myself down among the tall grass by the stream as I lie close to the earth.
-          </p>
-        </div>
-        <div class="service__item">
-          <i class="fas fa-tv fa-4x" style="color: #357FF6;"></i>
-          <h3>Business Stratagy</h3>
-          <p>I throw myself down among the tall grass by the stream as I lie close to the earth.
-          </p>
+        <!-- slide4 -->
+        <div class="carousel__wrap">
+          <div class="carousel__img">
+            <img class="img-fluid" src="./img/bg-image-20.jpg" alt="carousel-img">
+          </div>
+          <div class="carousel__title txt__center container">
+            <h1 class="mgb-20 wow animate__fadeInUp animated">UX Research.</h1>
+            <p class="p__text wow animate__fadeInUp animated">There are many variations of passages of Lorem Ipsum
+              available but
+              <br> the majority have suffered
+              alteration.
+            </p>
+            <div class="seemorebtn txt__center mgt-40">
+              <button class="btn animate__fadeInUp animated">
+                <a class="btn_bg " href="#">
+                  <span> CONTACT US</span>
+                </a>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- Service -->
+  <section id="service" class="container">
+    <div class="service__content bg__pd">
+      <div class="service__title">
+        <span class="subtitle">What we can do for you</span>
+        <h2 class="mgb-20">Our Awesome Service</h2>
+        <p>There are many variations of passages of Lorem Ipsum available, <br />
+          but the majority have suffered alteration.</p>
+      </div>
+      <div class="service__blog">
+        <div class="row">
 
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="service__item">
+              <i class="fas fa-podcast fa-3x" style="color: #fd4766;"></i>
+              <h3>Business Stratagy</h3>
+              <p>I throw myself down among the tall grass by the stream as I lie close to the earth.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="service__item">
+              <i class="fas fa-layer-group fa-3x" style="color: #357FF6"></i>
+              <h3>Business Stratagy</h3>
+              <p>I throw myself down among the tall grass by the stream as I lie close to the earth.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="service__item">
+              <i class="fas fa-users fa-3x" style="color: #12d8df;"></i>
+              <h3>Business Stratagy</h3>
+              <p>I throw myself down among the tall grass by the stream as I lie close to the earth.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="service__item">
+              <i class="fas fa-tv fa-3x" style="color:#59C98D ;"></i>
+              <h3>Business Stratagy</h3>
+              <p>I throw myself down among the tall grass by the stream as I lie close to the earth.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="service__item">
+              <i class="fas fa-users fa-3x" style="color: #6F41F6;"></i>
+              <h3>Business Stratagy</h3>
+              <p>I throw myself down among the tall grass by the stream as I lie close to the earth.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="service__item">
+              <i class="fas fa-tv fa-3x" style="color: #357FF6;"></i>
+              <h3>Business Stratagy</h3>
+              <p>I throw myself down among the tall grass by the stream as I lie close to the earth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- project -->
-
   <section id="project">
     <div class="project__content bg__img bg__pd">
-      <div class="container">
+      <div class="container container container-sm container-lg">
         <div class="row">
           <div class="col-lg-12">
-            <div class="content__title">
-              <span class="p__title">Our complete project </span>
+            <div class="content__title txt__center">
+              <p class="p__title">Our complete project </p>
               <h2 class="mgb-20">Our Project</h2>
               <p class="p__text">There are many variations of passages of Lorem Ipsum available,
                 <br> but the majority have suffered alteration.
@@ -205,7 +258,7 @@
               <div class="item__wrapper">
                 <div class="img__a">
                   <a href="#">
-                    <img class="img-fluid" src="./images/portfolio-4.jpg" alt="project1">
+                    <img class="img-fluid" src="./img/portfolio-4.jpg" alt="project1">
                   </a>
                 </div>
               </div>
@@ -234,7 +287,7 @@
               <div class="item__wrapper">
                 <div class="img__a">
                   <a href="#">
-                    <img class="img-fluid" src="./images/portfolio-5.jpg" alt="project2">
+                    <img class="img-fluid" src="./img/portfolio-5.jpg" alt="project2">
                   </a>
                 </div>
               </div>
@@ -242,11 +295,11 @@
                 <div class="text__wrapper">
                   <div class="text__title">
                     <div class="text__mgb">
-                      <a href="#">Development</a>
+                      <a href="#">Product Design</a>
                     </div>
                     <div class="text__mgb">
                       <h4>
-                        <a href="#">Web Design</a>
+                        <a href="#">App Development</a>
                       </h4>
                     </div>
                   </div>
@@ -263,7 +316,7 @@
               <div class="item__wrapper">
                 <div class="img__a">
                   <a href="#">
-                    <img class="img-fluid" src="./images/portfolio-6.jpg" alt="project3">
+                    <img class="img-fluid" src="./img/portfolio-6.jpg" alt="project3">
                   </a>
                 </div>
               </div>
@@ -271,11 +324,11 @@
                 <div class="text__wrapper">
                   <div class="text__title">
                     <div class="text__mgb">
-                      <a href="#">Development</a>
+                      <a href="#">Application</a>
                     </div>
                     <div class="text__mgb">
                       <h4>
-                        <a href="#">Web Design</a>
+                        <a href="#">Photoshop Design</a>
                       </h4>
                     </div>
                   </div>
@@ -292,7 +345,7 @@
               <div class="item__wrapper">
                 <div class="img__a">
                   <a href="#">
-                    <img class="img-fluid" src="./images/portfolio-7.jpg" alt="project4">
+                    <img class="img-fluid" src="./img/portfolio-7.jpg" alt="project4">
                   </a>
                 </div>
               </div>
@@ -300,11 +353,11 @@
                 <div class="text__wrapper">
                   <div class="text__title">
                     <div class="text__mgb">
-                      <a href="#">Development</a>
+                      <a href="#">Web Design</a>
                     </div>
                     <div class="text__mgb">
                       <h4>
-                        <a href="#">Web Design</a>
+                        <a href="#">Website Design</a>
                       </h4>
                     </div>
                   </div>
@@ -321,7 +374,7 @@
               <div class="item__wrapper">
                 <div class="img__a">
                   <a href="#">
-                    <img class="img-fluid" src="./images/portfolio-8.jpg" alt="project5">
+                    <img class="img-fluid" src="./img/portfolio-8.jpg" alt="project5">
                   </a>
                 </div>
               </div>
@@ -329,11 +382,11 @@
                 <div class="text__wrapper">
                   <div class="text__title">
                     <div class="text__mgb">
-                      <a href="#">Development</a>
+                      <a href="#">Application</a>
                     </div>
                     <div class="text__mgb">
                       <h4>
-                        <a href="#">Web Design</a>
+                        <a href="#">Web Application</a>
                       </h4>
                     </div>
                   </div>
@@ -350,7 +403,7 @@
               <div class="item__wrapper">
                 <div class="img__a">
                   <a href="#">
-                    <img class="img-fluid" src="./images/portfolio-9.jpg" alt="project6">
+                    <img class="img-fluid" src="./img/portfolio-9.jpg" alt="project6">
                   </a>
                 </div>
               </div>
@@ -358,11 +411,11 @@
                 <div class="text__wrapper">
                   <div class="text__title">
                     <div class="text__mgb">
-                      <a href="#">Development</a>
+                      <a href="#">Photoshop</a>
                     </div>
                     <div class="text__mgb">
                       <h4>
-                        <a href="#">Web Design</a>
+                        <a href="#">Photo Editing</a>
                       </h4>
                     </div>
                   </div>
@@ -373,42 +426,45 @@
               </div>
             </div>
           </div>
-          <!-- <div class="project__button">
-            <a href="">view project</a>
-          </div> -->
         </div>
         <div class="row">
-          <div class="project__button">
-            <a href="#">view project</a>
+          <div class="col-lg-12">
+            <div class="seemorebtn txt__center mgt-40">
+              <button class="btn ">
+                <a class="btn_bg" href="#">
+                  <span>VIEW PROJECTS</span>
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- About -->
-  <section id="about">
-    <div class="container">
+  </section>
+  <!-- about -->
+  <section id="about" class="bg__pd">
+    <div class="container container container-sm container-lg">
       <div class="about__container">
         <div class="row row--35">
           <div class="col-lg-5">
             <div class="thumbnail__wrapper">
               <div class="thumbnail">
-                <img class="img-fluid" src="./images/about-3.jpg" alt="">
+                <img class="img-fluid" src="./img/about-3.jpg" alt="">
               </div>
             </div>
           </div>
           <div class="col-lg-7">
             <div class="about__title">
-              <span class="subtitle">Our company about</span>
+              <p class="p__title">About our company </p>
               <h2>About</h2>
               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                 alteration
                 in
-                some form, by injected humour, or randomised words which dont look even slightly believable. If you are
+                some form, by injected humour, or randomised words which dont look even slightly believable. If you
+                are
                 going
-                to
-                use a passage of Lorem Ipsum, </p>
+                touse a passage of Lorem Ipsum, </p>
             </div>
             <div class="row mt--30">
               <div class="about__content">
@@ -416,65 +472,64 @@
                   <div class="row">
                     <div class="col-lg-12">
                       <!-- Nav pills -->
+                      <ul class="nav nav-pills">
+                        <li class="nav-item">
 
-                      <div class="row">
-                        <ul class="nav nav-pills">
-                          <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#home">Our History</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#menu1">Our Mission</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#menu2">Our Vision</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#menu3">Support</a>
-                          </li>
-                        </ul>
+                          <a class="nav-link active" data-toggle="pill" href="#home">Our History</a>
 
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                          <div class="tab-pane container active " id="home">
-                            <h4>Lorem ipsum dolor sit.</h4>
-                            <ul>
-                              <li><i class="fas fa-check"></i>The Philosophy Of business analytics</li>
-                              <li><i class="fas fa-check"></i>Fast-Track Your business</li>
-                              <li><i class="fas fa-check"></i>Lies And Damn Lies About business</li>
-                              <li><i class="fas fa-check"></i>The Ultimate Deal On business</li>
-                            </ul>
-                          </div>
-                          <div class="tab-pane container fade" id="menu1">
-                            <p>Fatima ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim,
-                              vero nobis quam beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt
-                              architecto officiis laudantium corporis voluptatem.</p>
-                            <br />
-                            <p>Jannin ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim,
-                              vero nobis quam beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt
-                              architecto officiis laudantium corporis voluptatem.</p>
-                          </div>
-                          <div class="tab-pane container fade" id="menu2">
-                            <p>John ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim,
-                              vero
-                              nobis quam beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt architecto
-                              officiis laudantium corporis voluptatem.</p>
-                            <br />
-                            <p>Jane ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim,
-                              vero
-                              nobis quam beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt architecto
-                              officiis laudantium corporis voluptatem.</p>
-                          </div>
-                          <div class="tab-pane container fade" id="menu3">
-                            <p>John ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim,
-                              vero
-                              nobis quam beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt architecto
-                              officiis laudantium corporis voluptatem.</p>
-                            <br />
-                            <p>Jane ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim,
-                              vero
-                              nobis quam beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt architecto
-                              officiis laudantium corporis voluptatem.</p>
-                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="pill" href="#menu1">Our Mission</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="pill" href="#menu2">Our Vision</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="pill" href="#menu3">Support</a>
+                        </li>
+                      </ul>
+
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div class="tab-pane container active " id="home">
+                          <h4>Lorem ipsum dolor sit.</h4>
+                          <ul>
+                            <li><i class="fas fa-check"></i>The Philosophy Of business analytics</li>
+                            <li><i class="fas fa-check"></i>Fast-Track Your business</li>
+                            <li><i class="fas fa-check"></i>Lies And Damn Lies About business</li>
+                            <li><i class="fas fa-check"></i>The Ultimate Deal On business</li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane container fade" id="menu1">
+                          <p>Fatima ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim,
+                            vero nobis quam beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt
+                            architecto officiis laudantium corporis voluptatem.</p>
+                          <br />
+                          <p>Jannin ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim,
+                            vero nobis quam beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt
+                            architecto officiis laudantium corporis voluptatem.</p>
+                        </div>
+                        <div class="tab-pane container fade" id="menu2">
+                          <p>John ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim,
+                            vero
+                            nobis quam beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt architecto
+                            officiis laudantium corporis voluptatem.</p>
+                          <br />
+                          <p>Jane ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim,
+                            vero
+                            nobis quam beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt architecto
+                            officiis laudantium corporis voluptatem.</p>
+                        </div>
+                        <div class="tab-pane container fade" id="menu3">
+                          <p>John ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim,
+                            vero
+                            nobis quam beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt architecto
+                            officiis laudantium corporis voluptatem.</p>
+                          <br />
+                          <p>Jane ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim,
+                            vero
+                            nobis quam beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt architecto
+                            officiis laudantium corporis voluptatem.</p>
                         </div>
                       </div>
                     </div>
@@ -486,40 +541,134 @@
         </div>
       </div>
   </section>
-
-  <!-- people -->
-
-  <section>
-    <div class="container">
-      <div class="row align-item-center"></div>
+  <!-- Latest News -->
+  <section id="latestNews">
+    <div class="latestNews__content bg__img bg__pd">
+      <div class="container container-sm container-lg">
+        <div class="row">
+          <div class="col-12">
+            <div class="content__title txt__center">
+              <p class="p__title">Latest post </p>
+              <h2 class="mgb-20">Latest News </h2>
+              <p class="p__text">There are many variations of passages of Lorem Ipsum available,
+                <br> but the majority have suffered alteration.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Blog1 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="project__item mgt-40">
+              <div class="item__wrapper">
+                <div class="img__a">
+                  <a href="#">
+                    <img class="img-fluid" src="./img/blog-01.jpg" alt="project1">
+                  </a>
+                </div>
+              </div>
+              <div class="item__text">
+                <div class="text__wrapper">
+                  <div class="text__title">
+                    <div class="text__mgb">
+                      <a href="#">App Development</a>
+                    </div>
+                    <div class="text__mgb">
+                      <h4>
+                        <a href="#">What is the Difference between Web and
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="text__hover">
+                    <button class="hidden__button btn ">
+                      <a href="#"> READ MORE</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- blog2 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="project__item mgt-40">
+              <div class="item__wrapper">
+                <div class="img__a">
+                  <a href="#">
+                    <img class="img-fluid" src="./img/blog-02.jpg" alt="project1">
+                  </a>
+                </div>
+              </div>
+              <div class="item__text">
+                <div class="text__wrapper">
+                  <div class="text__title">
+                    <div class="text__mgb">
+                      <a href="#">React App</a>
+                    </div>
+                    <div class="text__mgb">
+                      <h4>
+                        <a href="#">A big ticket gone to be an interesting look New York.
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="text__hover">
+                    <button class="hidden__button btn ">
+                      <a href="#"> READ MORE</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- blog3 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="project__item mgt-40">
+              <div class="item__wrapper">
+                <div class="img__a">
+                  <a href="#">
+                    <img class="img-fluid" src="./img/blog-03.jpg" alt="project1">
+                  </a>
+                </div>
+              </div>
+              <div class="item__text">
+                <div class="text__wrapper">
+                  <div class="text__title">
+                    <div class="text__mgb">
+                      <a href="#">Photoshop</a>
+                    </div>
+                    <div class="text__mgb">
+                      <h4>
+                        <a href="#">Getting tickets to the big show have a closer look.
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="text__hover">
+                    <button class="hidden__button btn ">
+                      <a href="#"> READ MORE</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="seemorebtn txt__center mgt-40">
+              <button class="btn ">
+                <a class="btn_bg" href="#">
+                  <span>VIEW MORE</span>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -531,8 +680,22 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
-
+  <!-- slick -->
+  <script src="./libs/slick/slick.min.js"></script>
+  <script>
+    $('.carousel__slick').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear'
+    });
+  </script>
+  <!-- Wowjs -->
+  <script src="./libs/wowjs/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
