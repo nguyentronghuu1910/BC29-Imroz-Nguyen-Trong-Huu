@@ -761,13 +761,16 @@ a.a_after.ahover:hover::after {
   display: block;
   text-align: center;
   border-radius: 50%;
-  color: red;
-  border: solid 1px red;
+  color: rgb(253 71 102);
+  border: solid 1px rgb(253 71 102);
   position: fixed;
   right: 20px;
   bottom: 20px;
   opacity: 0;
   visibility: 1;
+}
+.backtotop i{
+  color:rgb(253 71 102) ;
 }
 .cd-top--is-visible {
   visibility: visible;
